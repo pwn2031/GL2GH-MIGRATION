@@ -24,6 +24,37 @@ A configuration-driven automation toolkit for migrating GitLab groups, repositor
 - GitLab personal access token
 - GitHub personal access token
 
+Use a **classic GitHub PAT** for this POC, since the GitHub organization is new and repositories will be created during migration.
+
+## GitLab PAT
+
+```text
+read_api
+read_repository
+write_repository
+```
+
+## GitHub PAT — classic
+
+```text
+repo
+workflow
+admin:org
+```
+
+## Why
+
+| Token | Permission | Purpose |
+|---|---|---|
+| GitLab PAT | `read_api` | Read groups, projects, members, MRs, variables, runners, and deploy keys |
+| GitLab PAT | `read_repository` | Clone and read Git repositories |
+| GitLab PAT | `write_repository` | Push migrated Git history, branches, and tags |
+| GitHub PAT | `repo` | Create/manage repositories, code, PRs, issues, secrets, variables, environments, and deploy keys |
+| GitHub PAT | `workflow` | Create and update GitHub Actions workflow files |
+| GitHub PAT | `admin:org` | Create and manage teams, members, and organization-level migration resources |
+
+For this POC, use **classic PAT**, not fine-grained, because you need broad organization and repository-creation permissions while repositories do not yet exist.
+
 ## Quick start
 
 1. Clone this repository:
