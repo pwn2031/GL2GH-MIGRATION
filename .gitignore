@@ -1,0 +1,28 @@
+# Secrets and local configuration
+config.env
+*.env
+!config.env.example
+
+# Generated migration data
+inventory/*
+!inventory/.gitkeep
+migration/*
+!migration/.gitkeep
+reports/*
+!reports/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Temporary repository clones
+working-clones/*
+!working-clones/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
