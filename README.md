@@ -29,8 +29,8 @@ A configuration-driven automation toolkit for migrating GitLab groups, repositor
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-account>/gitlab-to-github-migration-toolkit.git
-   cd gitlab-to-github-migration-toolkit
+   git clone https://github.com/pwn2031/GL2GH-MIGRATION.git
+   cd GL2GH-MIGRATION
    ```
 
 2. Create a virtual environment:
