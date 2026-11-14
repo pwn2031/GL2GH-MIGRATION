@@ -8,6 +8,7 @@ A configuration-driven automation toolkit for migrating GitLab groups, repositor
 - Git repositories with full history, branches, and tags
 - GitHub repositories
 - User and permission mappings
+- Merge Requests
 - Deploy key inventory
 - Branch protection rulesets
 - Issues, labels, milestones, and releases
